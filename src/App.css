@@ -1,15 +1,16 @@
 .main {
     display: flex;
     flex-direction: column;
-    place-items: flex-start;
-    align-items: center;
+    /* place-items: flex-start;
+    align-items: center; */
     gap: 10px;
-    margin-top: 1rem;
+    max-width: 400px;
+    margin: 1rem auto;
 }
 
 .form-control {
-    /* display: block; */
-    /* width: 100%; */
+    display: block;
+    width: 100%;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -26,6 +27,7 @@
 }
 
 .btn {
+    width: 100%;
     cursor: pointer;
     display: inline-block;
     font-weight: 400;
@@ -55,4 +57,17 @@
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        /* place-items: flex-start;
+        align-items: center; */
+        gap: 10px;
+        max-width: 400px;
+        margin: 1rem auto;
+        padding: 0px 15px;
+    }
 }

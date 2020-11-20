@@ -59,7 +59,7 @@ function App() {
   return (
     <>
       <div className="main">
-        <input ref={todoRef} type="text" className="form-control" placeholder="Enter Todo" />
+        <textarea ref={todoRef} className="form-control" placeholder="Enter Todo" rows={4}></textarea>
         <button type="submit" onClick={AddTodo} className="btn btn-primary">Add</button>
         <button type="button" onClick={DeleteCompletedTodos} className="btn btn-danger">Delete Completed Todos</button>
         <div>
