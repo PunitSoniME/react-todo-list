@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import TodoList from './components/TodoList';
+import TodoList from './components/TodoList/TodoList';
 
 const LOCAL_STORAGE_TODOS = 'stored_todo_list';
 
@@ -62,10 +62,13 @@ function App() {
         <textarea ref={todoRef} className="form-control" placeholder="Enter Todo" rows={4}></textarea>
         <button type="submit" onClick={AddTodo} className="btn btn-primary">Add</button>
         <button type="button" onClick={DeleteCompletedTodos} className="btn btn-danger">Delete Completed Todos</button>
-        <div>
-          <TodoList todos={todos} changeStatus={changeStatus} />
-        </div>
+
       </div>
+
+      <hr />
+
+      <TodoList todos={todos} changeStatus={changeStatus} />
+
     </>
   );
 

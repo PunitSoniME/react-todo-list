@@ -1,0 +1,16 @@
+.todos-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.my-2 {
+    margin: 0.5rem 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .todos-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

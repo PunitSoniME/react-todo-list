@@ -59,6 +59,7 @@
     border-color: #dc3545;
 }
 
+
 @media screen and (max-width: 768px) {
     .main {
         display: flex;

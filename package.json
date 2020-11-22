@@ -1,6 +1,6 @@
 {
   "homepage": "https://punitsonime.github.io/react-todo-list/",
-  "name": "react-typescript",
+  "name": "todo-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
